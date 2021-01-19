@@ -9,8 +9,9 @@
 
 # 1) Compute a random number between 1 and 100 (and store it into a
 # variable)
-
-computer_choice = rand(1..100)
+min = 1
+max = 10000
+computer_choice = rand(min..max)
 
 # >> this is the first time something gets repeated!
 # >> THIS IS THE BEGINNING OF THE LOOP
@@ -21,16 +22,25 @@ computer_choice = rand(1..100)
 player_choice = nil
 count = 0
 
+puts "Do you want to play? [Y/n]"
+answer = gets.chomp
+
 while computer_choice != player_choice
-  puts "What's your guess?"
-  player_choice = gets.chomp.to_i
+  if answer == "Y"
+    puts "So what's your number?"
+    player_choice = gets.chomp.to_i
+  else
+    player_choice = (min + max) / 2
+  end
 
   count += 1
 
   if player_choice > computer_choice
-    puts "You should guess something smaller"
+    max = player_choice
+    puts "Go smaller" if answer == "Y"
   elsif player_choice < computer_choice
-    puts "You should guess something bigger"
+    min = player_choice
+    puts "Go bigger" if answer == "Y"
   end
 end
 
