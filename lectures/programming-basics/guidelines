@@ -1,0 +1,24 @@
+How to run your code?
+- IRB vs ruby name_of_file.rb
+
+Built in Objects
+- String
+- Integer
+- Float
+- Array
+- Range
+- nil, false, true
+- Ruby doc!
+
+Variables
+- Why?
+- Assignment operator
+- Reassigning, incrementing
+
+Methods
+- Why?
+- DRY
+- Parameters VS Arguments
+- Return
+
+Conventions
