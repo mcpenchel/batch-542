@@ -7,11 +7,12 @@ What we learned today:
 - Model inheriting from ActiveRecord::Base (remember the naming conventions, double check name of class VS name of file)
 - Seed file to kickstart some data into your app (the faker gem is awesome for that)
 
-Some of the Active Record's methods that we can use:
+Some (but not all) of the Active Record's methods that we can use:
 
 - Restaurant.find(1)
 - Restaurant.find_by(name: "Shrubbles")
 - Restaurant.where(address: "Mastodon")
+- Restaurant.where("address LIKE ?", "%street%")
 - Restaurant.count
 - Restaurant.first
 - Restaurant.last
