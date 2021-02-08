@@ -1,16 +1,5 @@
 ## ActiveRecord basics boilerplate
 
-As a user I can list all the restaurants
-As a user I can see one restaurant's details
-As a user I can add a restaurant
-
-# 1 - Create model + migration for Restaurant
-
-
-
-
-
-
 This is a minimalist implementation of ActiveRecord with one `Restaurant` model to live-code a demo for @LeWagon students, part of [Karr examples](https://github.com/lewagon/karr-examples), working with Sinatra.
 
 - clone the repo
