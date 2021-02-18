@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
     <style>
+      .hidden {
+        display: none;
+      }
+
       .red {
         color: red;
       }
@@ -23,17 +27,21 @@
       <p class="red">In a galaxy far, far away...</p>
 
       <ul id="players">
-        <li class="green">Palpatine</li>
+        <li class="green"><strong>Palpatine</strong></li>
         <li class="red">Vader</li>
+        <li>Darth Bane</li>
+        <li>General Grievous</li>
       </ul>
 
       <ol id="fifa-wins">
-        <li>Brazil (5 wins)</li>
-        <li>Germany (4 wins)</li>
-        <li>Italy (4 wins)</li>
-        <li>Argentina (2 wins)</li>
-        <li>Uruguay (2 wins)</li>
+        <li>Brazil (5 wins) <button>Delete</button></li>
+        <li>Germany (4 wins) <button>Delete</button></li>
+        <li>Italy (4 wins) <button>Delete</button></li>
+        <li>Argentina (2 wins) <button>Delete</button></li>
+        <li>Uruguay (2 wins) <button>Delete</button></li>
       </ol>
+
+      <div id="matt" data-favorite-band="Mastodon" data-age="31" data-football-club="Botafogo">Matheus</div>
 
       <input name="email" id="email" value="matheus@gmail.com" />
 
