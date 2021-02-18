@@ -165,6 +165,10 @@ const galaxyParagraph = document.querySelector('.red');
 // 2) When should something happen? Which event are we listening to?
 galaxyParagraph.addEventListener('click', (event) => {
   // 3) What should happen?
+  // The code inside here is a Callback!
+  // This is actually an "anonymous function", that only gets executed
+  // when the event is triggered on the element.
+
   window.alert("Wooow, you've clicked on me!");
 })
 
@@ -180,6 +184,10 @@ deleteButtons.forEach((button) => {
   // 2) When should something happen? Which event are we listening to?
   button.addEventListener('click', (event) => {
     // 3) What should happen?
+    // The code inside here is a Callback!
+    // This is actually an "anonymous function", that only gets executed
+    // when the event is triggered on the element.
+
     // event.target.parentElement.remove();
     // same thing as
     button.parentElement.remove();
@@ -197,6 +205,10 @@ images.forEach((img) => {
   // 2) When should something happen? Which event are we listening to?
   img.addEventListener('click', (event) => {
     // 3) What should happen?
+    // The code inside here is a Callback!
+    // This is actually an "anonymous function", that only gets executed
+    // when the event is triggered on the element.
+
     img.classList.toggle('img-circle');
   })
 })
