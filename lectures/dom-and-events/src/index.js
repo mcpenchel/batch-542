@@ -20,7 +20,7 @@ const starWarsParagraph = document.querySelector('.red');
 // 2) getElementById
 // ==========================================
 //
-// getElementById is basically querySelector('#o_tal_do_ID'), an alternative!
+// getElementById is basically querySelector('#the_ID'), an alternative!
 // You can use it, or you can always use querySelector.. You're the boss ;)
 const playersUl = document.getElementById('players');
 
