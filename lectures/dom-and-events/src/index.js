@@ -131,7 +131,7 @@ emailInput.value = "My new value";
 // can access it and use it somehow.
 
 // How does it work?
-// First, inside the HTML, let's think of an element like this: <div id="name">Matheus Penchel</div>
+// First, inside the HTML, let's think of an element like this: <div id="matt">Matheus Penchel</div>
 // We change it manually, so that it looks like this: <div id="matt" data-favorite-band="Mastodon" data-age="31" data-football-club="Botafogo">Matheus Penchel</div>
 
 const matheusDiv = document.querySelector('#matt');
