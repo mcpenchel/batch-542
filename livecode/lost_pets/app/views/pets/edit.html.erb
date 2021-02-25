@@ -1,15 +1,8 @@
-<%= form_for @pet do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.label :species %>
-  <%= f.select  :species, Pet::SPECIES %>
-
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-
-  <%= f.label :date_found %>
-  <%= f.date_field :date_found %>
-
-  <%= f.submit %>
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :species, collection: Pet::SPECIES %>
+  <%= f.input :address %>
+  <%= f.input :date_found, as: :date, start_year: Date.today.year - 1,
+                                      end_year: Date.today.year %>
+  <%= f.button :submit, "Update the Pet", class: 'btn btn-primary' %>
 <% end %>
