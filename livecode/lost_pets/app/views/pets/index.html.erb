@@ -1,0 +1,14 @@
+<h1>Did you find a pet?</h1>
+
+<h2>Here are the ones that we found, and are up for adoption:</h2>
+
+<%= link_to "Found a pet?", new_pet_path %>
+
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <%= link_to "#{pet.name} (#{pet.species})", pet_path(pet) %>
+       | <%= link_to "Delete", pet_path(pet), method: :delete, data: {confirm: "Are you sure?"} %>
+    </li>
+  <% end %>
+</ul>
